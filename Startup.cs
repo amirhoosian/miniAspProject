@@ -36,6 +36,7 @@ namespace myAspMiniProject
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "myAspMiniProject", Version = "v1" });
             });
             services.AddTransient<IUsers, UsersServices>();
+            services.AddTransient<IPublisher, PublisherServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
